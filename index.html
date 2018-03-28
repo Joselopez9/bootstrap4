@@ -25,7 +25,11 @@
     ...navbar-inverse class to specify that the page should use the dark navigation bar-->
     <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
         <div class="container">
-           <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <!--Navbar Button when screen is small-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon">Navbar</span>
+            </button>
+           <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
            <!--To hide the items from the navigation bar for the small screens...
            ...data-toggle="collapse" data-target="#Navbar"= These classes specifies that the menu items are collapsed on small and xs screens when the toggle button is visible-->
            <div class="collapse navbar-collapse" id="Navbar">
@@ -39,9 +43,7 @@
                 </ul> 
             </div>           
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-        </button>
+        
     </nav>
 
     <header class="jumbotron"><!--allow all content set apart from the rest of the page-->
@@ -54,7 +56,8 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <!--Below div col-sm take the remaining 4 columns from the above div that take 8 columns for that row -->
-                <div class="col col-sm">
+                <div class="col col-sm align-self-center">
+                    <img src="img/logo.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -74,8 +77,20 @@
             -Below col-md to extra large size It did not specify any #, so it will ocuppy the remaining 9 col of that row-->
             <!--<div class="col-sm pull-sm-4 col-md pull-md-3"> -->
             <div class="col-sm col-md flex-first">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <!--Use of the media class and the related Bootstrap classes to style the content.-->
+                <div class="media">
+                <!--mr-3 move margin of pict 3 units from description-->
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                         src="img/uthappizza.png" alt="Uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza</h2>
+                        <!--class="hidden-xs-down" dissapear p text when screen size decrease to x-sm-->
+                        <p class="hidden-xs-down">A unique combination of Indian Uthappam (pancake) and
+                          Italian pizza, topped with Cerignola olives, ripe vine
+                          cherry tomatoes, Vidalia onion, Guntur chillies and
+                          Buffalo Paneer.</p>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -94,9 +109,20 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col-sm col-med-3 flex-first">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+            <!--Use of the media class and the related Bootstrap classes to style the content.-->
+                <div class="media"> <!--class "media" moves pict to the left side-->
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                         src="img/alberto.png" alt="Alberto Somayya">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="hidden-xs-down">Award winning three-star Michelin chef with wide
+                         International experience having worked closely with
+                         whos-who in the culinary world, he specializes in
+                          creating mouthwatering Indo-Italian fusion experiences.
+                         </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

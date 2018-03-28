@@ -24,7 +24,12 @@
     ...navbar-inverse class to specify that the page should use the dark navigation bar-->
     <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
         <div class="container">
-           <a class="navbar-brand" href="./index.html">Ristorante Con Fusion</a>
+            <!--Navbar Button when screen is small-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon">Navbar</span>
+            </button>
+           <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
+        
            <!--To hide the items from the navigation bar for the small screens...
            ...data-toggle="collapse" data-target="#Navbar"= These classes specifies that the menu items are collapsed on small and xs screens when the toggle button is visible-->
            <div class="collapse navbar-collapse" id="Navbar">
@@ -50,7 +55,8 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col col-sm">
+                <div class="col col-sm align-self-center">
+                    <img src="img/logo.png" class="img-fluid">
                 </div>
             </div>
         </div>
