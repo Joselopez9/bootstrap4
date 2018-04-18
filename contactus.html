@@ -112,7 +112,7 @@
                             <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
                         </div>
                     </div>
-                    <!--Use of an input-group together with input-group-addons...Note the use of the input-group and input-group-addon classes-->
+                <!--Use of an input-group together with input-group-addons...Note the use of the input-group and input-group-addon classes-->
                     <div class="form-group row">
                         <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
                         <div class="col-5 col-sm-4 col-md-3">
@@ -134,20 +134,27 @@
                     </div>
                 <!--Addition of a checkbox and a select element to the form. Note the styling of these elements using Bootstrap classes:-->
                     <div class="form-group row">
-                       <div class="form-check col-md-6 offset-md-2">
+                       <div class="form-check col-md-4 offset-md-0">
                             <label class="form-check-label">
                                 <input type="checkbox" class="form-check-input" name="approve" value="">
                                 <strong>May we contact you?</strong>
                             </label>
                         </div>
-                        <div class="col-md-3 offset-md-1">
+                        <div class="col-md-2 offset-md-0">
+                            <select class="form-control">
+                                <option>Tel.</option>
+                                <option>Email</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-2 offset-md-0">
                             <select class="form-control">
                                 <option>Tel.</option>
                                 <option>Email</option>
                             </select>
                         </div>
                     </div>
-                <!--Add a textarea for the users to submit their feedback comments--> 
+                <!--Add a textarea for the users to submit their feedback comments-->
                     <div class="form-group row">
                         <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
                         <div class="col-md-10">
@@ -165,8 +172,7 @@
                     </div>
                 </form>
             </div>
-             <div class="col-12 col-md">
-            </div>
+    
        </div>
 
     </div>

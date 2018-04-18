@@ -36,5 +36,30 @@ body{
      background-color: #512DA8;
 }
 
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
 
 
+
+/*copy from stackoverflow
+
+.element {
+  display: inline-flex;
+  align-items: center;
+}
+i.fa-camera {
+  margin: 10px;
+  cursor: pointer;
+  font-size: 30px;
+}
+i:hover {
+  opacity: 0.6;
+}
+input {
+  display: none;
+}
+*/
