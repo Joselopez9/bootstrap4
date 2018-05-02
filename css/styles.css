@@ -58,6 +58,16 @@ body{
     min-height: 300px;
 }
 
+/*Adding CSS class below to position the buttons at 
+the bottom-right corner of the carousel. ID carousel
+button below. We write jquery at the bottom of the 
+index.html to make these buttons works */
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+}
+
 /*copy from stackoverflow
 
 .element {
